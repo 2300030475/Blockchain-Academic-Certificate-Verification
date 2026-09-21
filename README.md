@@ -1,7 +1,7 @@
-# Blockchain-Academic-Certificate-Verification
-Blockchain-Based Academic Certificate Verification System
+### Blockchain-Academic-Certificate-Verification
+# Blockchain-Based Academic Certificate Verification System
 
-##INTRODUCTION
+## INTRODUCTION
 
 The Blockchain-Based Academic Certificate Verification System is a secure web-based system designed to verify the authenticity of academic certificates. The system uses blockchain technology, IPFS, and SHA-256 hashing to maintain trusted certificate records and detect changes made to certificate documents.
 
