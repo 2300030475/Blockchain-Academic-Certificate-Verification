@@ -1,15 +1,23 @@
+
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
 
+# Node.js / React
 **/node_modules/
 **/dist/
-**/target/
-**/artifacts/
-**/cache/
 **/coverage/
 
+# Spring Boot / Java
+**/target/
+*.class
+
+# Hardhat / blockchain
+**/artifacts/
+**/cache/
+
+# IDE and generated files
 **/.idea/
 **/.settings/
-*.class
 *.log
