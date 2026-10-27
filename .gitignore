@@ -1,0 +1,22 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# React / Node.js
+**/node_modules/
+**/dist/
+
+# Spring Boot
+**/target/
+*.class
+
+# Hardhat / blockchain
+**/artifacts/
+**/cache/
+**/coverage/
+
+# IDE and logs
+**/.idea/
+**/.settings/
+*.log
