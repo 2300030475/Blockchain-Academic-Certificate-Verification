@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+
+**/node_modules/
+**/dist/
+**/target/
+**/artifacts/
+**/cache/
+**/coverage/
+
+**/.idea/
+**/.settings/
+*.class
+*.log

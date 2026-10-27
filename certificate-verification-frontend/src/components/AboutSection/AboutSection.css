@@ -1,0 +1,312 @@
+/* ===========================
+   ABOUT SECTION
+=========================== */
+
+.about {
+    max-width: 1300px;
+
+    /* Reduced large top/bottom spacing */
+    margin: 65px auto;
+
+    padding: 0 60px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+
+/* ===========================
+   LEFT IMAGE
+=========================== */
+
+.about-left {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+}
+
+.about-left::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+
+    height: 420px;
+
+    background: #DBEAFE;
+
+    border-radius: 50%;
+
+    filter: blur(90px);
+
+    z-index: -1;
+}
+
+.about-left img {
+    width: 100%;
+
+    max-width: 520px;
+
+    object-fit: contain;
+
+    filter: drop-shadow(0 30px 60px rgba(37, 99, 235, .18));
+
+    animation: float 5s ease-in-out infinite;
+}
+
+
+/* ===========================
+   RIGHT CONTENT
+=========================== */
+
+.about-right {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.about-tag {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 10px 22px;
+
+    background: #EFF6FF;
+
+    color: #2563EB;
+
+    border-radius: 999px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: .5px;
+}
+
+.about-right h2 {
+    margin-top: 18px;
+
+    font-size: 46px;
+
+    line-height: 1.2;
+
+    font-weight: 800;
+
+    color: #0F172A;
+}
+
+.about-right p {
+    margin-top: 18px;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #64748B;
+}
+
+
+/* ===========================
+   FEATURE GRID
+=========================== */
+
+.about-features {
+    margin-top: 28px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+}
+
+.feature-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    background: #ffffff;
+
+    padding: 18px;
+
+    border-radius: 18px;
+
+    border: 1px solid #EEF2F7;
+
+    box-shadow: 0 12px 35px rgba(15, 23, 42, .08);
+
+    transition: .35s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(37, 99, 235, .15);
+
+    border-color: #D6E4FF;
+}
+
+.feature-item svg {
+    width: 56px;
+
+    height: 56px;
+
+    padding: 14px;
+
+    border-radius: 50%;
+
+    background: #EFF6FF;
+
+    color: #2563EB;
+
+    flex-shrink: 0;
+}
+
+.feature-item span {
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: #0F172A;
+
+    line-height: 1.4;
+}
+
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.learn-btn {
+    margin-top: 28px;
+
+    width: fit-content;
+
+    background: #2563EB;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 14px;
+
+    padding: 16px 38px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .35s ease;
+}
+
+.learn-btn:hover {
+    transform: translateY(-5px);
+
+    background: #1D4ED8;
+
+    box-shadow: 0 18px 45px rgba(37, 99, 235, .30);
+}
+
+
+/* ===========================
+   FLOAT ANIMATION
+=========================== */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1100px) {
+
+    .about {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 40px;
+
+        padding: 0 30px;
+
+        margin: 60px auto;
+    }
+
+    .about-left {
+        order: 1;
+    }
+
+    .about-right {
+        order: 2;
+
+        align-items: center;
+    }
+
+    .about-right h2 {
+        font-size: 38px;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .about {
+        margin: 50px auto;
+
+        padding: 0 20px;
+    }
+
+    .about-left img {
+        max-width: 470px;
+    }
+
+    .about-right h2 {
+        font-size: 32px;
+    }
+
+    .about-right p {
+        font-size: 16px;
+    }
+
+    .feature-item {
+        padding: 18px;
+    }
+
+}

@@ -1,0 +1,89 @@
+.admin-verification-logs {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 35px;
+}
+
+.logs-header {
+  margin-bottom: 30px;
+}
+
+.logs-header h1 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 30px;
+}
+
+.logs-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.logs-search {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.logs-search input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.logs-search input:focus {
+  border-color: #2563eb;
+}
+
+.logs-table-container {
+  background: white;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.logs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.logs-table th {
+  background: #f9fafb;
+  color: #374151;
+  text-align: left;
+  padding: 16px;
+  font-size: 14px;
+}
+
+.logs-table td {
+  padding: 16px;
+  border-top: 1px solid #e5e7eb;
+  color: #4b5563;
+}
+
+.no-logs {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.no-logs h3 {
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.no-logs p {
+  margin: 0;
+  color: #6b7280;
+}
+
+@media (max-width: 700px) {
+  .admin-verification-logs {
+    padding: 20px;
+  }
+}

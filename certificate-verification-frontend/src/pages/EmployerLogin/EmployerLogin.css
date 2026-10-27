@@ -1,0 +1,46 @@
+@import "../StudentLogin/StudentLogin.css";
+
+/* Orange Theme */
+
+.employer-badge{
+    background:#F97316;
+}
+
+.employer-icon{
+    background:#FFF7ED;
+    color:#F97316;
+}
+
+.employer-btn{
+    background:#F97316;
+}
+
+.employer-btn:hover{
+    background:#EA580C;
+}
+
+.employer-link{
+    color:#F97316;
+}
+
+.input-box:focus-within{
+    border-color:#F97316;
+    box-shadow:0 0 0 4px rgba(249,115,22,.15);
+}
+
+.feature-box{
+    background:#FFF7ED;
+    border:1px solid #FED7AA;
+}
+
+.feature-item{
+    color:#F97316;
+}
+
+.circle1{
+    background:#FDBA74;
+}
+
+.circle2{
+    background:#FED7AA;
+}

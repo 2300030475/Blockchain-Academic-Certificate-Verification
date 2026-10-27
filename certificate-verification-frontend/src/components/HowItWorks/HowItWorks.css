@@ -1,0 +1,154 @@
+/* ===========================
+   HOW IT WORKS
+=========================== */
+
+.how-section {
+
+    width: 90%;
+
+    max-width: 1300px;
+
+    /* Reduced section spacing */
+    margin: 65px auto;
+
+}
+
+
+/* ===========================
+   SECTION TITLE
+=========================== */
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+.section-title h2 {
+
+    font-size: 42px;
+
+    color: #0F172A;
+
+    margin-bottom: 12px;
+
+}
+
+.section-title p {
+
+    color: #64748B;
+
+    font-size: 18px;
+
+}
+
+
+/* ===========================
+   STEPS
+=========================== */
+
+.steps {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 24px;
+
+}
+
+
+/* ===========================
+   STEP CARD
+=========================== */
+
+.step-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 32px 25px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+
+    transition: .35s;
+
+}
+
+.step-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 25px 45px rgba(37, 99, 235, .15);
+
+}
+
+.step-icon {
+
+    font-size: 55px;
+
+    color: #2563EB;
+
+    margin-bottom: 20px;
+
+}
+
+.step-card h3 {
+
+    margin-bottom: 12px;
+
+    color: #0F172A;
+
+    font-size: 24px;
+
+}
+
+.step-card p {
+
+    color: #64748B;
+
+    line-height: 1.7;
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px) {
+
+    .how-section {
+
+        margin: 55px auto;
+
+    }
+
+    .steps {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media(max-width:600px) {
+
+    .how-section {
+
+        margin: 45px auto;
+
+    }
+
+    .steps {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}

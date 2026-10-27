@@ -1,0 +1,45 @@
+/* Green Theme */
+@import "../StudentLogin/StudentLogin.css";
+
+.university-badge{
+    background:#16A34A;
+}
+
+.university-icon{
+    background:#DCFCE7;
+    color:#16A34A;
+}
+
+.university-btn{
+    background:#16A34A;
+}
+
+.university-btn:hover{
+    background:#15803D;
+}
+
+.university-link{
+    color:#16A34A;
+}
+
+.input-box:focus-within{
+    border-color:#16A34A;
+    box-shadow:0 0 0 4px rgba(22,163,74,.15);
+}
+
+.feature-item{
+    color:#16A34A;
+}
+
+.feature-box{
+    background:#F0FDF4;
+    border:1px solid #BBF7D0;
+}
+
+.circle1{
+    background:#4ADE80;
+}
+
+.circle2{
+    background:#86EFAC;
+}

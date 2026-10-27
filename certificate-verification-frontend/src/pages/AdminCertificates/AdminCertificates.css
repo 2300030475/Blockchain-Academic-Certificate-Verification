@@ -1,0 +1,373 @@
+.admin-certificates {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 35px;
+}
+
+/* ============================= */
+/* Header */
+/* ============================= */
+
+.certificates-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.certificates-header h1 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 30px;
+}
+
+.certificates-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.add-certificate-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.add-certificate-btn:hover {
+  background: #1d4ed8;
+}
+
+/* ============================= */
+/* Search */
+/* ============================= */
+
+.certificate-search {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.certificate-search input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.certificate-search input:focus {
+  border-color: #2563eb;
+}
+
+/* ============================= */
+/* Certificate Table */
+/* ============================= */
+
+.certificate-table-container {
+  background: white;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.certificate-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.certificate-table th {
+  background: #f9fafb;
+  color: #374151;
+  text-align: left;
+  padding: 16px;
+  font-size: 14px;
+}
+
+.certificate-table td {
+  padding: 16px;
+  border-top: 1px solid #e5e7eb;
+  color: #4b5563;
+}
+
+.no-certificates {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.no-certificates h3 {
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.no-certificates p {
+  margin: 0;
+  color: #6b7280;
+}
+
+/* ============================= */
+/* Messages */
+/* ============================= */
+
+.certificate-success {
+  margin: 20px 0;
+  padding: 14px 18px;
+  border-radius: 10px;
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+  font-size: 14px;
+}
+
+.certificate-error {
+  margin: 20px 0;
+  padding: 14px 18px;
+  border-radius: 10px;
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  font-size: 14px;
+}
+
+/* ============================= */
+/* Registration Form */
+/* ============================= */
+
+.certificate-form-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+.certificate-form-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.certificate-form-header h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.certificate-form-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.close-form-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-form-btn:hover {
+  background: #e2e8f0;
+}
+
+/* ============================= */
+/* Form Grid */
+/* ============================= */
+
+.certificate-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.certificate-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.certificate-form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.certificate-form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.certificate-form-group input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.certificate-form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* ============================= */
+/* Certificate PDF Upload */
+/* ============================= */
+
+.certificate-file-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px dashed #94a3b8;
+  border-radius: 8px;
+  background: #f8fafc;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.certificate-file-input:hover {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.file-help-text {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* ============================= */
+/* Automatic Generation Information */
+/* ============================= */
+
+.auto-generated-box {
+  grid-column: 1 / -1;
+  padding: 16px 18px;
+  border-radius: 10px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+.auto-generated-box h4 {
+  margin: 0 0 6px;
+  color: #1d4ed8;
+  font-size: 14px;
+}
+
+.auto-generated-box p {
+  margin: 0;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ============================= */
+/* Form Buttons */
+/* ============================= */
+
+.certificate-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.cancel-certificate-btn,
+.save-certificate-btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-certificate-btn {
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #475569;
+}
+
+.cancel-certificate-btn:hover {
+  background: #f8fafc;
+}
+
+.save-certificate-btn {
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.save-certificate-btn:hover {
+  background: #1d4ed8;
+}
+
+.save-certificate-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ============================= */
+/* Table Hash / IPFS */
+/* ============================= */
+
+.hash-cell {
+  max-width: 220px;
+  word-break: break-all;
+  font-size: 12px;
+}
+
+.cid-cell {
+  max-width: 160px;
+  word-break: break-all;
+  font-size: 12px;
+}
+
+/* ============================= */
+/* Responsive */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .certificate-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-form-group.full-width,
+  .auto-generated-box {
+    grid-column: auto;
+  }
+
+  .certificate-form-actions {
+    flex-direction: column;
+  }
+
+  .cancel-certificate-btn,
+  .save-certificate-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .admin-certificates {
+    padding: 20px;
+  }
+
+  .certificates-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

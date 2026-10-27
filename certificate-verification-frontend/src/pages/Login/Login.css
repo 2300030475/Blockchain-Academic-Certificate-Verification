@@ -1,0 +1,237 @@
+.login{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:80px;
+
+    padding:80px;
+
+    background:linear-gradient(180deg,#F8FAFF,#EEF5FF);
+
+}
+
+.login-left{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.login-left img{
+
+    width:100%;
+
+    max-width:500px;
+
+}
+
+.login-right{
+
+    flex:1;
+
+    max-width:500px;
+
+    background:#fff;
+
+    padding:45px;
+
+    border-radius:22px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.login-tag{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    background:#EAF2FF;
+
+    color:#2563EB;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+    font-size:14px;
+
+}
+
+.login-right h2{
+
+    margin-top:20px;
+
+    font-size:42px;
+
+    color:#0F172A;
+
+}
+
+.login-right p{
+
+    margin:18px 0 30px;
+
+    color:#64748B;
+
+    line-height:1.7;
+
+}
+
+.input-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    border:1px solid #E5E7EB;
+
+    padding:15px 20px;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+}
+
+.input-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+.eye{
+
+    cursor:pointer;
+
+}
+
+.login-options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:25px;
+
+    font-size:15px;
+
+}
+
+.login-options a{
+
+    color:#2563EB;
+
+    text-decoration:none;
+
+}
+
+.login-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563EB;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}
+
+.divider{
+
+    text-align:center;
+
+    margin:30px 0;
+
+    color:#94A3B8;
+
+}
+
+.back-role{
+
+    display:block;
+
+    text-align:center;
+
+    color:#2563EB;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.register{
+
+    text-align:center;
+
+    margin-top:25px;
+
+}
+
+.register a{
+
+    color:#2563EB;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
+
+@media(max-width:900px){
+
+.login{
+
+flex-direction:column;
+
+padding:40px 20px;
+
+}
+
+.login-left img{
+
+max-width:320px;
+
+}
+
+}

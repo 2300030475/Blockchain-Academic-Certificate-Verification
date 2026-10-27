@@ -1,0 +1,361 @@
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:9999;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 70px;
+
+    background:rgba(255,255,255,.88);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    border-bottom:1px solid rgba(226,232,240,.7);
+
+    transition:.35s;
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    text-decoration:none;
+
+}
+
+.logo-image{
+
+    width:68px;
+
+    height:68px;
+
+    object-fit:contain;
+
+    transition:.35s;
+
+}
+
+.logo-image:hover{
+
+    transform:rotate(-5deg) scale(1.05);
+
+}
+
+.logo-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.logo-text h3{
+
+    margin:0;
+
+    font-size:32px;
+
+    font-weight:800;
+
+    color:#2563EB;
+
+    line-height:1;
+
+}
+
+.logo-text span{
+
+    margin-top:5px;
+
+    font-size:14px;
+
+    color:#64748B;
+
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    list-style:none;
+
+    gap:38px;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.nav-links li{
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#1E293B;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#2563EB;
+
+}
+
+.nav-links .active{
+
+    color:#2563EB;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:3px;
+
+    border-radius:50px;
+
+    background:#2563EB;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover::after,
+
+.nav-links .active::after{
+
+    width:100%;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.login-btn,
+
+.register-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    border-radius:12px;
+
+    padding:12px 28px;
+
+    transition:.35s;
+
+}
+
+.login-btn{
+
+    color:#2563EB;
+
+    border:2px solid #2563EB;
+
+    background:white;
+
+}
+
+.login-btn:hover{
+
+    background:#2563EB;
+
+    color:white;
+
+    transform:translateY(-3px);
+
+}
+
+.register-btn{
+
+    background:#F97316;
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(249,115,22,.25);
+
+}
+
+.register-btn:hover{
+
+    background:#EA580C;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 35px rgba(249,115,22,.35);
+
+}
+
+/* ==========================================
+   MOBILE MENU
+========================================== */
+
+.menu-icon{
+
+    display:none;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    color:#2563EB;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.navbar{
+
+padding:18px 30px;
+
+}
+
+.nav-links{
+
+gap:22px;
+
+}
+
+.logo-text h3{
+
+font-size:28px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.menu-icon{
+
+display:block;
+
+}
+
+.nav-links{
+
+position:absolute;
+
+top:90px;
+
+left:0;
+
+width:100%;
+
+background:white;
+
+flex-direction:column;
+
+padding:30px 0;
+
+display:none;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.nav-links.active{
+
+display:flex;
+
+}
+
+.buttons{
+
+display:none;
+
+}
+
+.logo-image{
+
+width:58px;
+
+height:58px;
+
+}
+
+.logo-text h3{
+
+font-size:24px;
+
+}
+
+.logo-text span{
+
+font-size:12px;
+
+}
+
+}
